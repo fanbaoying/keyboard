@@ -15,6 +15,9 @@
 		451C62491F70C5DC00C46A56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451C62471F70C5DC00C46A56 /* LaunchScreen.storyboard */; };
 		451C62541F70C5DC00C46A56 /* _______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 451C62531F70C5DC00C46A56 /* _______Tests.m */; };
 		451C625F1F70C5DC00C46A56 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 451C625E1F70C5DC00C46A56 /* _______UITests.m */; };
+		455FBE4E1F73936E009C5D5D /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 455FBE4C1F73936E009C5D5D /* delete.png */; };
+		455FBE4F1F73936E009C5D5D /* addImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 455FBE4D1F73936E009C5D5D /* addImg.png */; };
+		455FBE521F74B124009C5D5D /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 455FBE511F74B124009C5D5D /* KeyboardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		451C625A1F70C5DC00C46A56 /* 自定义金额键盘UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义金额键盘UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		451C625E1F70C5DC00C46A56 /* _______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______UITests.m"; sourceTree = "<group>"; };
 		451C62601F70C5DC00C46A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		455FBE4C1F73936E009C5D5D /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		455FBE4D1F73936E009C5D5D /* addImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addImg.png; sourceTree = "<group>"; };
+		455FBE501F74B124009C5D5D /* KeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
+		455FBE511F74B124009C5D5D /* KeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +108,12 @@
 		451C62381F70C5DC00C46A56 /* 自定义金额键盘 */ = {
 			isa = PBXGroup;
 			children = (
+				455FBE4D1F73936E009C5D5D /* addImg.png */,
+				455FBE4C1F73936E009C5D5D /* delete.png */,
 				451C623C1F70C5DC00C46A56 /* AppDelegate.h */,
 				451C623D1F70C5DC00C46A56 /* AppDelegate.m */,
+				455FBE501F74B124009C5D5D /* KeyboardView.h */,
+				455FBE511F74B124009C5D5D /* KeyboardView.m */,
 				451C623F1F70C5DC00C46A56 /* ViewController.h */,
 				451C62401F70C5DC00C46A56 /* ViewController.m */,
 				451C62421F70C5DC00C46A56 /* Main.storyboard */,
@@ -207,6 +218,7 @@
 				TargetAttributes = {
 					451C62351F70C5DC00C46A56 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KYKA84G3A2;
 						ProvisioningStyle = Automatic;
 					};
 					451C624E1F70C5DC00C46A56 = {
@@ -246,6 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455FBE4E1F73936E009C5D5D /* delete.png in Resources */,
+				455FBE4F1F73936E009C5D5D /* addImg.png in Resources */,
 				451C62491F70C5DC00C46A56 /* LaunchScreen.storyboard in Resources */,
 				451C62461F70C5DC00C46A56 /* Assets.xcassets in Resources */,
 				451C62441F70C5DC00C46A56 /* Main.storyboard in Resources */,
@@ -274,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				451C62411F70C5DC00C46A56 /* ViewController.m in Sources */,
+				455FBE521F74B124009C5D5D /* KeyboardView.m in Sources */,
 				451C623E1F70C5DC00C46A56 /* AppDelegate.m in Sources */,
 				451C623B1F70C5DC00C46A56 /* main.m in Sources */,
 			);
@@ -424,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KYKA84G3A2;
 				INFOPLIST_FILE = "自定义金额键盘/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TextDemo.a.-------";
@@ -435,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KYKA84G3A2;
 				INFOPLIST_FILE = "自定义金额键盘/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TextDemo.a.-------";
@@ -507,6 +524,7 @@
 				451C62651F70C5DC00C46A56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		451C62661F70C5DC00C46A56 /* Build configuration list for PBXNativeTarget "自定义金额键盘Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +533,7 @@
 				451C62681F70C5DC00C46A56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		451C62691F70C5DC00C46A56 /* Build configuration list for PBXNativeTarget "自定义金额键盘UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +542,7 @@
 				451C626B1F70C5DC00C46A56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
