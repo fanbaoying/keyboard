@@ -14,7 +14,7 @@ iOS自定义键盘是iOS8系统新推出的功能，允许开发者开发第三�
 
 #### 1.获取代码
 [源码地址(GitHub)](https://github.com/fanbaoying/keyboard)
-去GitHub下载源码，记得赏点颗星哟！！！
+去GitHub下载源码，记得点颗星哟！！！
 
 ![项目文件截图](http://upload-images.jianshu.io/upload_images/2829694-1bdde547bfcf6aba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
@@ -59,9 +59,9 @@ iOS自定义键盘是iOS8系统新推出的功能，允许开发者开发第三�
     NSLog(@"点击了收款按钮");
 }
 ```
-#####OK，到这里就可以使用自定义的收款键盘了。
+##### OK，到这里就可以使用自定义的收款键盘了。
 
-####KeyboardView内部代码详解
+#### KeyboardView内部代码详解
 
 1. KeyboardView.h
 ```
