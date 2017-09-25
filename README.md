@@ -1,6 +1,6 @@
 # keyboard
 
-###效果图：
+### 效果图：
 ![效果图](http://upload-images.jianshu.io/upload_images/2829694-dd7d49a581088f21.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
 在iOS8之前，iOS系统的输入法只能使用苹果官方提供的输入法。
