@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451018701F78A0DC00DA6144 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4510186E1F78A0DB00DA6144 /* KeyboardView.m */; };
 		451C623B1F70C5DC00C46A56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 451C623A1F70C5DC00C46A56 /* main.m */; };
 		451C623E1F70C5DC00C46A56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 451C623D1F70C5DC00C46A56 /* AppDelegate.m */; };
 		451C62411F70C5DC00C46A56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 451C62401F70C5DC00C46A56 /* ViewController.m */; };
@@ -17,7 +18,6 @@
 		451C625F1F70C5DC00C46A56 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 451C625E1F70C5DC00C46A56 /* _______UITests.m */; };
 		455FBE4E1F73936E009C5D5D /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 455FBE4C1F73936E009C5D5D /* delete.png */; };
 		455FBE4F1F73936E009C5D5D /* addImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 455FBE4D1F73936E009C5D5D /* addImg.png */; };
-		455FBE521F74B124009C5D5D /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 455FBE511F74B124009C5D5D /* KeyboardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4510186E1F78A0DB00DA6144 /* KeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
+		4510186F1F78A0DC00DA6144 /* KeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
 		451C62361F70C5DC00C46A56 /* 自定义金额键盘.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义金额键盘.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		451C623A1F70C5DC00C46A56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		451C623C1F70C5DC00C46A56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,8 +58,6 @@
 		451C62601F70C5DC00C46A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		455FBE4C1F73936E009C5D5D /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		455FBE4D1F73936E009C5D5D /* addImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addImg.png; sourceTree = "<group>"; };
-		455FBE501F74B124009C5D5D /* KeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
-		455FBE511F74B124009C5D5D /* KeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +110,10 @@
 			children = (
 				455FBE4D1F73936E009C5D5D /* addImg.png */,
 				455FBE4C1F73936E009C5D5D /* delete.png */,
+				4510186F1F78A0DC00DA6144 /* KeyboardView.h */,
+				4510186E1F78A0DB00DA6144 /* KeyboardView.m */,
 				451C623C1F70C5DC00C46A56 /* AppDelegate.h */,
 				451C623D1F70C5DC00C46A56 /* AppDelegate.m */,
-				455FBE501F74B124009C5D5D /* KeyboardView.h */,
-				455FBE511F74B124009C5D5D /* KeyboardView.m */,
 				451C623F1F70C5DC00C46A56 /* ViewController.h */,
 				451C62401F70C5DC00C46A56 /* ViewController.m */,
 				451C62421F70C5DC00C46A56 /* Main.storyboard */,
@@ -288,7 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				451C62411F70C5DC00C46A56 /* ViewController.m in Sources */,
-				455FBE521F74B124009C5D5D /* KeyboardView.m in Sources */,
+				451018701F78A0DC00DA6144 /* KeyboardView.m in Sources */,
 				451C623E1F70C5DC00C46A56 /* AppDelegate.m in Sources */,
 				451C623B1F70C5DC00C46A56 /* main.m in Sources */,
 			);

@@ -10,6 +10,9 @@
 
 @interface KeyboardView : UIView
 
+@property(strong,nonatomic)UIButton *myBtn1;
+@property(strong,nonatomic)UILabel *moneyLab;
+
 -(void)showPopView;
 
 @end

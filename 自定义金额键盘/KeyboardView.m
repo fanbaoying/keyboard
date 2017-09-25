@@ -8,6 +8,8 @@
 
 #import "KeyboardView.h"
 
+
+
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
@@ -22,13 +24,14 @@
 @property(strong,nonatomic)UIView *contentView;
 
 @property(strong,nonatomic)UIButton *myBtn;
+
 @property(strong,nonatomic)NSArray *titleArr;
 
 @property(strong,nonatomic)UILabel *reminderLab;
 
 @property(strong,nonatomic)NSString *numberString;
 
-@property(strong,nonatomic)UILabel *moneyLab;
+
 
 @property(strong,nonatomic)UILabel *lab;
 
@@ -50,7 +53,7 @@
     if (!_contentView)
     {
         _contentView=[[UIView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-SCREEN_WIDTH-3, SCREEN_WIDTH, SCREEN_WIDTH+3)];
-        _contentView.backgroundColor=[UIColor purpleColor];
+        _contentView.backgroundColor=[UIColor lightTextColor];
     }
     
     return _contentView;
@@ -104,10 +107,14 @@
     
     self.reminderLab = [[UILabel alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-SCREEN_WIDTH-33, SCREEN_WIDTH-20, 30)];
     self.reminderLab.textAlignment = NSTextAlignmentRight;
+    self.reminderLab.textColor = [UIColor colorWithRed:239/255.0 green:135/255.0 blue:51/255.0 alpha:1]
+;
     [self addSubview:_reminderLab];
     
     self.moneyLab = [[UILabel alloc]initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 70)];
     self.moneyLab.text = @"0.00";
+    self.moneyLab.textColor = [UIColor colorWithRed:239/255.0 green:135/255.0 blue:51/255.0 alpha:1]
+;
     self.moneyLab.font = [UIFont systemFontOfSize:50.0];
     self.moneyLab.textAlignment = NSTextAlignmentCenter;
     [self addSubview:_moneyLab];
@@ -162,14 +169,15 @@
             int count3 = (SCREEN_WIDTH-3)*(i-7)/4+(i-7);
             
             if (i == 10) {
-                self.myBtn = [[UIButton alloc]initWithFrame:CGRectMake(count3, SCREEN_WIDTH/2+2, (SCREEN_WIDTH-3)/4, SCREEN_WIDTH/2+1)];
-                self.myBtn.backgroundColor = [UIColor whiteColor];
-                [self.myBtn setTitleColor:[UIColor blackColor] forState:0];
-                self.myBtn.titleLabel.font = [UIFont systemFontOfSize:30.0];
-                self.myBtn.tag = 6000+i;
-                [self.myBtn setTitle:_titleArr[i] forState:0];
-                [self.myBtn addTarget:self action:@selector(myBtn:) forControlEvents:UIControlEventTouchUpInside];
-                [self.contentView addSubview:_myBtn];
+                self.myBtn1 = [[UIButton alloc]initWithFrame:CGRectMake(count3, SCREEN_WIDTH/2+2, (SCREEN_WIDTH-3)/4, SCREEN_WIDTH/2+1)];
+                [self.myBtn1 setTitleColor:[UIColor whiteColor] forState:0];
+                self.myBtn1.titleLabel.font = [UIFont systemFontOfSize:30.0];
+//                self.myBtn1.tag = 6000+i;
+                self.myBtn1.backgroundColor = [UIColor colorWithRed:239/255.0 green:135/255.0 blue:51/255.0 alpha:1]
+;
+                [self.myBtn1 setTitle:_titleArr[i] forState:0];
+//                [self.myBtn1 addTarget:self action:@selector(myBtn:) forControlEvents:UIControlEventTouchUpInside];
+                [self.contentView addSubview:_myBtn1];
                 
             }else {
                 
@@ -209,10 +217,37 @@
             
         }
         
+        [self.myBtn addTarget:self action:@selector(button1BackGroundHighlighted:) forControlEvents:UIControlEventTouchDown];
+        [self.myBtn addTarget:self action:@selector(button1BackGroundNormal:) forControlEvents:UIControlEventTouchUpInside];
+        
         
     }
     
     
+    
+}
+
+//  button1普通状态下的背景色
+- (void)button1BackGroundNormal:(UIButton *)sender
+{
+    if (sender.tag == 6010) {
+        
+    }else{
+        
+        sender.backgroundColor = [UIColor whiteColor];
+    }
+    
+}
+
+//  button1高亮状态下的背景色
+- (void)button1BackGroundHighlighted:(UIButton *)sender
+{
+    if (sender.tag == 6010) {
+        
+    }else{
+        
+        sender.backgroundColor = [UIColor colorWithRed:238/255.0 green:241/255.0 blue:247/255.0 alpha:0.5];
+    }
     
 }
 
@@ -241,8 +276,6 @@
             self.numberString = [NSString stringWithFormat:@"%@%@",_numberString,@"2"];
         }else if (sender.tag == 6009) {
             self.numberString = [NSString stringWithFormat:@"%@%@",_numberString,@"3"];
-        }else if (sender.tag == 6010) {
-            
         }else if (sender.tag == 6011) {
             self.numberString = [NSString stringWithFormat:@"%@%@",_numberString,@"0"];
         }else if (sender.tag == 6012) {
@@ -427,10 +460,6 @@
                     }
                 }
                 
-            }else if (sender.tag == 6010) {
-                
-                
-                
             }else if (sender.tag == 6011) {
                 
                 for (int i = 0; i < _numberString.length; i ++) {
@@ -515,6 +544,8 @@
         }
         
     }
+    
+    
 
     
 }
